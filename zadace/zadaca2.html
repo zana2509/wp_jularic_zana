@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ovo je osnovna HTML stranica s tablicom, obrascem i multimedijskim sadržajem.">
+    <meta name="author" content="Vaše Ime">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadaca2</title>
+</head>
+<body>
+
+    <!-- Naslov stranice -->
+    <h1>Plan Tjednih Obaveza</h1>
+
+    <!-- Tablica -->
+    <h2>Raspored obaveza</h2>
+    <section>
+        <caption><strong>Tjedni Raspored</strong></caption>
+        <thead>
+            <tr>
+                <th>Dan</th>
+                <th colspan="2">Obaveze</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ponedjeljak</td>
+                <td>Posao</td>
+                <td>Vježbanje</td>
+            </tr>
+            <tr>
+                <td>Utorak</td>
+                <td rowspan="2">Posao</td>
+                <td>Čitanje</td>
+            </tr>
+            <tr>
+                <td>Srijeda</td>
+                <td>Vježbanje</td>
+            </tr>
+            <tr>
+                <td>Četvrtak</td>
+                <td colspan="2">Slobodan dan</td>
+            </tr>
+            <tr>
+                <td>Petak</td>
+                <td>Posao</td>
+                <td>Odmor</td>
+            </tr>
+        </tbody>
+    </section>
+
+    <!-- Obrazac -->
+    <h2>Prijava Korisnika</h2>
+    <form action="#" method="post">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required><br><br>
+        
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required><br><br>
+        
+        <label for="lozinka">Lozinka:</label>
+        <input type="password" id="lozinka" name="lozinka" required><br><br>
+        
+        <p>Uloga:</p>
+        <input type="radio" id="admin" name="uloga" value="admin" required>
+        <label for="admin">Admin</label><br>
+        
+        <input type="radio" id="guest" name="uloga" value="guest" required>
+        <label for="guest">Gost</label><br><br>
+        
+        <input type="checkbox" id="uvjeti" name="uvjeti" required>
+        <label for="uvjeti">Prihvaćam uvjete korištenja</label><br><br>
+        
+        <button type="submit">Pošalji</button>
+        <button type="reset">Resetiraj</button>
+    </form>
+
+    <!-- Audio i video elementi -->
+    <h2>Multimedijski sadržaj</h2>
+
+    <!-- Audio zapis -->
+    <h3>Poslušajte zvuk</h3>
+    <audio controls>
+        <source src="audio/primjer.mp3" type="audio/mpeg">
+        Vaš preglednik ne podržava audio element.
+    </audio>
+
+    <!-- Video zapis -->
+    <h3>Pogledajte video</h3>
+    <video width="320" height="240" controls>
+        <source src="video/primjer.mp4" type="video/mp4">
+        Vaš preglednik ne podržava video element.
+    </video>
+
+</body>
+</html>
