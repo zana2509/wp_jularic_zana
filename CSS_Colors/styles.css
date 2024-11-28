@@ -1,0 +1,16 @@
+/* Set the background color of the webpage */
+body {
+    background-color: antiquewhite;
+}
+
+/* Style the h1 element */
+h1 {
+    color: whitesmoke;
+    background-color: darkseagreen;
+}
+
+/* Style the h2 element */
+h2 {
+    color: #FAF8F1;
+    background-color: #C58940;
+}
