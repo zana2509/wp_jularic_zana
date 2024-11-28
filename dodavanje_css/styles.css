@@ -1,0 +1,20 @@
+/* element selektor */
+h3 {
+    color: darkgoldenrod;
+    }
+h4 {
+    color: #a95ed1;
+}
+
+/* selektor klase */
+.naslov {
+    color: cadetblue;
+    }
+.rgb {
+    color: rgb(49, 190, 89);
+}
+
+/* selektor id */
+#naslov1 {
+    color: chocolate;
+    }
