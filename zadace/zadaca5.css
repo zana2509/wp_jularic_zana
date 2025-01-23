@@ -1,0 +1,105 @@
+/* Generalni stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav ul.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul.menu li {
+    margin: 0 15px;
+  }
+  
+  nav ul.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: #fdfdfd;
+  }
+  
+  .recept-kategorija {
+    margin-bottom: 30px;
+  }
+  
+  .recept-kategorija h2 {
+    text-align: center;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+  }
+  
+  .recept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .recept img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .recept h3 {
+    margin: 10px 0;
+    color: #e76f51;
+  }
+  
+  footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #e9c46a;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responzivnost */
+  @media (max-width: 480px) {
+    nav ul.menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
